@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Szachownica Inline-block</title>
+    <style>
+        .exit {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px;
+            text-decoration: none;
+            background-color: aquamarine;
+            color: black;
+            display: block;
+        }
+
+        .board {
+            position: absolute;
+            top: calc(50% - 15vw - 10px);
+            left: calc(50% - 15vw - 10px);
+            width: 30vw;
+            height: 30vw;
+            border: 10px solid black;
+            font-size: 0;
+        }
+
+        span {
+            display: inline-block;
+            width: 15vw;
+            height: 15vw;
+        }
+
+        span:nth-child(1),
+        span:nth-child(4) {
+            background-color: red;
+        }
+
+        h1 {
+            position: absolute;
+            bottom: 10vh;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <a class="exit" href="../index.html">wróć</a>
+    <div class="board">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <h1>Szachownica "inline-block"</h1>
+</body>
+
+</html>

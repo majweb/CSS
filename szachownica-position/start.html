@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Szachownica Position Absolute</title>
+    <style>
+        .exit {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px;
+            text-decoration: none;
+            background-color: aquamarine;
+            color: black;
+            display: block;
+        }
+
+        .board {
+            position: absolute;
+            top: calc(50% - 15vw - 10px);
+            left: calc(50% - 15% - 10px);
+            width: 30%;
+            height: 30vw;
+            border: 10px solid black;
+        }
+
+        span {
+            position: absolute;
+        }
+
+        span:nth-child(1) {
+            background-color: red;
+            left: 0;
+            top: 0;
+            bottom: 50%;
+            right: 50%;
+        }
+
+        span:nth-child(4) {
+            background-color: red;
+            right: 0;
+            bottom: 0;
+            top: 50%;
+            left: 50%;
+        }
+
+        h1 {
+            position: relative;
+            top: 85vh;
+            width: 100%;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <a class="exit" href="../index.html">wróć</a>
+    <div class="board">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <h1>Szachownica "Position Absolute"</h1>
+</body>
+
+</html>
